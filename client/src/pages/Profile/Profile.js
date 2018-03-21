@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import './Profile.css'
 
 class Profile extends Component {
@@ -17,8 +17,8 @@ class Profile extends Component {
                   <span class="search_nav">
                     <div class="search_nav_block">
                       <input type="text" class="search_bar form-control" placeholder="Search"/>
-                      <Link to="/signin"> <span class="top_nav_option"><a href="#">Sign In</a></span> </Link>
-                      <Link to="/register"> <span class="top_nav_option"><a class="sign_up" href="#">Sign Up</a></span> </Link>
+                      {/* <Link to="/signin"> <span class="top_nav_option"><a href="#">Sign In</a></span> </Link> */}
+                      {/* <Link to="/register"> <span class="top_nav_option"><a class="sign_up" href="#">Sign Up</a></span> </Link> */}
                     </div>
                   </span>
                 </div>
@@ -28,15 +28,15 @@ class Profile extends Component {
               <div class="col-xs-3 user_info main_col">
                 <div class="user_name">John Doe</div>
                 <div class="user_subtitle">Cool dude </div>
-                <a href="#">
+                {/* <a href="#">
                   <div class="follow_me">Follow me!</div>
-                </a><br/>
+                </a><br/> */}
                 <span class="divider"></span>
                 <div class="user_stat">SOCIAL</div>
                 <div class="social_icon">
-                  <a href="#">
+                  {/* <a href="#">
                     <i class="fa fa-twitter"></i>
-                  </a>
+                  </a> */}
                 </div>
                 <span class="divider"></span>
                 <div class="user_stat">FOLLOWING</div>

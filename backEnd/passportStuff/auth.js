@@ -1,8 +1,20 @@
-var passport = require('passport');
-var LocalStrategy = require('passport-local').Strategy;
-const User = require('./user');
+express = require(express);
+app = express();
+var passport = require('passport')
+, LocalStrategy = require('passport-local').Strategy;
+// User = require("../models/users");
+app.use(passport.initialize());
+app.use(passport.session());
 
-var AuthStrategy = passport.use(new LocalStrategy(User.autheniticate(
+passport.serializeUser(function (user, done) {
+    done(null, user);
+});
+
+passport.deserializeUser(function (obj, done) {
+    done(null, obj);
+});
+
+module.exports = passport.use(new LocalStrategy(
     function (username, password, done) {
     User.findOne({ username: username }, function (err, user) {
         if (err) { return done(err); }
@@ -16,6 +28,4 @@ var AuthStrategy = passport.use(new LocalStrategy(User.autheniticate(
     });
 })
     
-));
-
-module.exports = AuthStrategy
+);

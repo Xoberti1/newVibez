@@ -2,7 +2,6 @@ import React, {Component} from "react";
 import Passport from "./../../utilities/passport";
 import { Col, Row, Container } from "../../components/Grid";
 import { Input, FormBtn } from "../../components/Form";
-import {redirect} from "react-router-dom";
 
 class Signin extends Component {
 
