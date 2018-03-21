@@ -2,10 +2,9 @@ import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Signin from "./pages/signin/Signin";
 import Shows from "./pages/concerts/Shows";
-import Profile from "./pages/Profile/Profile"
+// import Profile from "./pages/Profile/Profile"
 import { Button } from 'reactstrap';
-
-// import chatroom from "./pages/chatroom";
+import ChatApp from "./pages/chatroom/App";
 // import register from "./pages/register";
 // import Signin from "./pages/signin/Signin";
 // import shows from "./pages/concerts/shows";
@@ -21,10 +20,10 @@ const App = () =>
       {/* <Navbar /> */}
         <Route exact path="/register" component={register} />
         <Route exact path="/" component={Signin} />
-        <Route exact path="/Profile" component={Profile} />
+        {/* <Route exact path="/Profile" component={Profile} /> */}
         <Route exact path="/Shows" component={Shows} />
-      {<Route exact path="/chatroom" component={Chatroom} />
-       <Footer />}
+        <Route exact path="/chatroom" component={ChatApp} />
+       {/* <Footer /> */}
     </div>
   </Router>;
 
