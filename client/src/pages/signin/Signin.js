@@ -3,6 +3,7 @@ import Passport from "./../../utilities/passport";
 import { Col, Row, Container } from "../../components/Grid";
 import { Input, FormBtn } from "../../components/Form";
 import {redirect} from "react-router-dom";
+import { Link } from 'react-router-dom';
 
 class Signin extends Component {
 
@@ -54,16 +55,16 @@ class Signin extends Component {
                                 name="password"
                                 placeholder="Password(required)"
                             />
-                            <FormBtn
+                             <FormBtn
                                 disabled={!(this.state.username && this.state.password)}
                                 onClick={this.handleFormSubmit}
                             >Submit
                             </FormBtn>
-                            <FormBtn
+                            <Link to="./register"><FormBtn
                                 onClick={this.redirect}
                             >
                                 Register
-                            </FormBtn>
+                            </FormBtn></Link>
                         </form>
                     </Col>
                 </Row>

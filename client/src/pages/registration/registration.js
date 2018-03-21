@@ -1,17 +1,9 @@
-
-
-
 import React, {Component} from "react";
 import Passport from "./../../utilities/passport";
 import { Col, Row, Container } from "../../components/Grid";
 import { Input, FormBtn } from "../../components/Form";
-import { Redirect } from 'react-router-dom';
 import { Link } from 'react-router-dom';
-
-
-
 class Register extends Component {
-
     constructor(props){
         super(props)
         this.state = {
@@ -22,14 +14,12 @@ class Register extends Component {
             email: "",
         }
     }
-
     handleInputChange = event => {
         const { name, value } = event.target;
         this.setState({
             [name]: value
         });
     };
-
     handleFormSubmit = event => {
         // // event.preventDefault();
         // // state = {
@@ -61,7 +51,6 @@ class Register extends Component {
                 
         }
     };
-
     render(){
         return(
             <Container fluid>
@@ -98,10 +87,9 @@ class Register extends Component {
                                 name="email"
                                 placeholder="Email(required)"
                             />
-                           <Link to="/signin"> <FormBtn
+                           <Link to="./"> <FormBtn
                                 disabled={!(this.state.username && this.state.password && this.state.name && this.state.email && this.state.zipCode)}
                                 // onClick={this.handleFormSubmit}
-
                                 
                             >Submit
                             </FormBtn></Link>
@@ -112,5 +100,4 @@ class Register extends Component {
         )
     }
 }
-
 export default Register;
