@@ -3,16 +3,16 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import Signin from "./pages/signin/Signin";
 import Shows from "./pages/concerts/Shows";
 import Profile from "./pages/Profile/Profile"
-// import { Button } from 'reactstrap';
+import { Button } from 'reactstrap';
 // import chatroom from "./pages/chatroom";
 // import register from "./pages/register";
 // import Signin from "./pages/signin/Signin";
-// import concerts from "./page/s/concerts";
+// import shows from "./pages/concerts/shows";
 // import chatroom from "./pages/chatroom";
 import register from "./pages/registration/registration";
 // import Navbar from "./components/Navbar";
 // import Wrapper from "./components/Wrapper";
-// import Footer from "./components/Footer";
+// // import Footer from "./components/Footer";
 
 const App = () =>
   <Router>
