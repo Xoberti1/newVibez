@@ -164,10 +164,6 @@ body {
     text-align: center;
   }
   
-  .ChatApp-logo {
-    animation: App-logo-spin infinite 20s linear;
-    height: 80px;
-  }
   
   .ChatApp-header {
     background-color: #222;
@@ -176,9 +172,7 @@ body {
     color: white;
   }
   
-  .ChatApp-title {
-    font-size: 1.5em;
-  }
+
   
   .ChatApp-intro {
     font-size: large;
@@ -189,4 +183,13 @@ body {
     to { transform: rotate(360deg); }
   }
   
-  
+  .container {
+    background-color: #fff;
+    width: 50%;
+    height:50%;
+    padding-top: 50px;
+    padding-bottom:80px;
+  }
+ .container .title {
+  text-align: center;
+ }
