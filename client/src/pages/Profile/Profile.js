@@ -29,7 +29,7 @@ class Profile extends Component {
                 <div class="user_subtitle">Cool dude</div>
                 <a href="#">
                   <div class="follow_me">Follow me!</div>
-                </a><br/>
+                </a><br/> */}
                 <span class="divider"></span>
                 <div class="user_stat">About Me</div>
                 <div>Total RAVER. Typical bacon scholar. Wannabe pop culture geek. Proud social media fanatic.</div>
