@@ -1,31 +1,21 @@
-express = require(express);
-app = express();
-var passport = require('passport')
-, LocalStrategy = require('passport-local').Strategy;
-// User = require("../models/users");
-app.use(passport.initialize());
-app.use(passport.session());
+// var passport = require('passport');
+// var LocalStrategy = require('passport-local').Strategy;
+// const User = require('./user');
 
-passport.serializeUser(function (user, done) {
-    done(null, user);
-});
-
-passport.deserializeUser(function (obj, done) {
-    done(null, obj);
-});
-
-module.exports = passport.use(new LocalStrategy(
-    function (username, password, done) {
-    User.findOne({ username: username }, function (err, user) {
-        if (err) { return done(err); }
-        if (!user) {
-            return done(null, false, { message: 'Incorrect username.' });
-        }
-        if (!user.validPassword(password)) {
-            return done(null, false, { message: 'Incorrect password.' });
-        }
-        return done(null, user);
-    });
-})
+// // // // var AuthStrategy = passport.use(new LocalStrategy(User.autheniticate(
+// // //     function (username, password, done) {
+// // //     User.findOne({ username: username }, function (err, user) {
+// // //         if (err) { return done(err); }
+// // //         if (!user) {
+// // //             return done(null, false, { message: 'Incorrect username.' });
+// // //         }
+// // //         if (!user.validPassword(password)) {
+// // //             return done(null, false, { message: 'Incorrect password.' });
+// // //         }
+// // //         return done(null, user);
+// // //     });
+// // // })
     
-);
+// // // ));
+
+// // module.exports = AuthStrategy
