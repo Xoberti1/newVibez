@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import Signin from "./pages/signin/Signin";
 import Shows from "./pages/concerts/Shows";
 import Profile from "./pages/Profile/Profile"
-import { Button } from 'reactstrap';
 import ChatApp from "./pages/chatroom/App";
 // import register from "./pages/register";
 // import Signin from "./pages/signin/Signin";
